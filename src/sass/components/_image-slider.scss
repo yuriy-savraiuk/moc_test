@@ -1,0 +1,32 @@
+.image-slider {
+  .image-wrapper {
+    position: relative;
+  }
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      padding: 10px;
+      border-radius: 0;
+      background-color: $col-highlight;
+      .fa {
+        font-size: 20px;
+      }
+    }
+    .owl-prev {
+      position: absolute;
+      left: 0;
+      top: 40%;
+      &:hover {
+        background-color: lighten($col-highlight, 10%);
+      }
+    }
+    .owl-next {
+      position: absolute;
+      right: 0;
+      top: 40%;
+      &:hover {
+        background-color: lighten($col-highlight, 10%);
+      }
+    }
+  }
+}

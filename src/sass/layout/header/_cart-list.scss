@@ -1,0 +1,86 @@
+.shopping-cart {
+  cursor: pointer;
+  span:hover {
+    color: $col-highlight;
+  }
+}
+
+.cart-list {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  cursor: default;
+  .cart-product {
+    padding: 10px 10px;
+    display: block;
+    transition: 0.1s;
+    .cart-product-title {
+      font-size: .8rem;
+    }
+    .cart-product-quantity {
+      display: block;
+      font-size: .7rem;
+    }
+    .cart-product-price {
+      display: block;
+      color: $col-highlight;
+      font-size: .85rem;
+    }
+    .delete-product {
+      padding: 0 15px 0 0;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all .2s;
+      &:hover {
+        color: $col-highlight;
+        transition: all .2s;
+      }
+      &:active {
+        outline: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.close-cart {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  font-size: 36px;
+  font-family: $secondary-font;
+  margin-left: 35px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s;
+  &:hover {
+    color: $col-highlight;
+    transition: all .2s;
+  }
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.cart-list-expanded {
+  width: 300px;
+}
+.cart-list-shut {
+  width: 0;
+}

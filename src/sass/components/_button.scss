@@ -1,0 +1,37 @@
+@mixin default-btn {
+  padding: 10px 20px;
+  display: block;
+  background-color: $col-highlight;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: all .4s;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten($col-highlight, 10%);
+    transition: all .5s;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display: none;
+    background-color: $col-highlight;
+    &:hover {
+      text-decoration: none;
+    }
+    .icon {
+      display: flex;
+      padding: 10px 10px;
+      .fa {
+        color: #fff;
+      }
+    }
+  }
+}

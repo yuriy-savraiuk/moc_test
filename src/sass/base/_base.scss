@@ -1,0 +1,35 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: $primary-font;
+  section {
+    padding: 50px 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: $secondary-font;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.main-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+// .section-header {
+//   padding: 0 0 30px 0;
+//   text-align: center;
+// }

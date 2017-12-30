@@ -1,0 +1,21 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Roboto:400,700,700i');
+
+//Owl Carousel
+@import '../libs/owl.carousel/src/scss/owl.carousel';
+@import '../libs/owl.carousel/src/scss/owl.theme.default';
+
+//Variables
+@import 'variables/variables';
+
+//Base
+@import 'base/base';
+
+//Components
+@import 'components/button';
+@import 'components/image-slider';
+
+//Layout
+@import 'layout/products/product-list';
+@import 'layout/header/header';
+@import 'layout/header/cart-list';
